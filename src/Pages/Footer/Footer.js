@@ -22,8 +22,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-5">
               <div className="left-container text-start">
-                <h1>LET'S LEARN ENGLISH
-                 WITH FUN</h1>
+                <h1>RIDESTYLE</h1>
                 <div className="icons-container d-flex text-center ">
                    <div className="icon">
                     <FontAwesomeIcon icon={faInstagramSquare} />
@@ -40,7 +39,7 @@ const Footer = () => {
                 </div>
                 <p className="mt-4 ">
                   <small>
-                    *This is about how to learn English language with fun.
+                    *This is about all type of bicyle.
                   </small>
                 </p>
 
@@ -53,8 +52,8 @@ const Footer = () => {
               <div className="footer-menu-container">
                 <ul>
                   <li className="footer-menu">Home</li>
-                  <li className="footer-menu">Services</li>
-                  <li className="footer-menu">Benefits</li>
+                  <li className="footer-menu">Products</li>
+                  <li className="footer-menu">Purchase</li>
                   <li className="footer-menu">Contact us</li>
                   <li className="footer-menu"> About us</li>
                 </ul>

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Calender = () => {
+const Purchases = () => {
     return (
         <div>
-            <h1>Calender</h1>
+            
         </div>
     );
 };
 
-export default Calender;
+export default Purchases;
