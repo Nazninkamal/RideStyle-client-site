@@ -1,5 +1,5 @@
 import React from 'react';
-// import one from '../../../images/1.png'
+import one from '../../../images/1.png'
 
 const Contact = () => {
     return (
@@ -18,7 +18,7 @@ const Contact = () => {
 
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12">
-            {/* <img src= {one} alt="" /> */}
+             <img src= {one} alt="" /> 
             </div>
        </div>
     );

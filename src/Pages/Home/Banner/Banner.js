@@ -20,7 +20,7 @@ const Banner = () => {
     <Carousel.Caption>
     <h2 className="font">Best Cycling Experience</h2>
     <h5 className="font">Become the world leader on the internet for the sport of cycling.</h5>
-    <Link to={`/allproduct`}><Button variant="primary">Explore Now</Button></Link>
+    <Link to={`/allproducts`}><Button variant="primary">Explore Now</Button></Link>
     
     </Carousel.Caption>
   </Carousel.Item>

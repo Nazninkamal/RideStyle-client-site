@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Product from '../Product/Product';
-import './Products.css'
+import AllProduct from '../AllProduct/AllProduct';
 
-const Products = () => {
+// import './AllProducts.css'
+
+const AllProducts = () => {
     const [products, setProducts] = useState([]);
     useEffect(() =>{
         fetch('http://localhost:4000/services')
@@ -12,29 +13,23 @@ const Products = () => {
     }, [])
     return (
         <div id="packages">
-            <h3 className="mt-5"><span className="color">FEATURED</span> PRODUCTS</h3>
+            <h3 className="mt-5"><span className="color">All</span> PRODUCTS</h3>
          
             <h6 className="mb-5 ">It is a long established fact that a reader will be distracted by the readable content page when looking at its layout.</h6>
             
             <div className="service-container">
             { 
-            products.slice(0,6).map(product =><Product
-            key = {product.id}
-            product = {product}
+            products.map(product =><AllProduct
+                key = {product.id}
+                product = {product}
+            ></AllProduct>
+            )}
             
-            ></Product>)
-             }
-            
-            
-            
-            
-           
-             
-              </div>
+             </div>
             
             
         </div>
     );
 };
 
-export default Products;
+export default AllProducts;

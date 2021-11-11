@@ -24,10 +24,10 @@ const Purchase = () => {
            <form onSubmit={handleSubmit(onSubmit)} >
       <input defaultValue={user.displayName} placeholder=" Name" {...register("name", { required: true })}/>
       <input defaultValue={user.email} placeholder="Email" {...register("email", { required: true })}/>
-      <input {...register("delivery address")} placeholder="delivery address"/>
-      <input {...register("product name")} placeholder="product name"/>
-      <input type="phone number" {...register("purchase")} placeholder="phone number"/>
-      <input type="card number" {...register("purchase")} placeholder="card number"/>
+      <input {...register("deliveryAddress")} placeholder="delivery address"/>
+      <input {...register("productName")} placeholder="product name"/>
+      <input type="number" {...register("phoneNumber")} placeholder="phone number"/>
+      <input type="number" {...register("cardNumber")} placeholder="card number"/>
 
       
       <input type="submit" />

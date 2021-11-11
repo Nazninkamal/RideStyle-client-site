@@ -25,10 +25,13 @@ const Header = () => {
       <Nav.Link as={HashLink} to="/contact">Contact us</Nav.Link>
       <Nav.Link as={HashLink} to="/addservice">AddService</Nav.Link>
      <Navbar.Collapse className="justify-content-end">
-      { user?.email ?
+      {/* { user?.email ?
            <Nav.Link as={HashLink} to="/myorder">My Order</Nav.Link>:<></>}
           { user?.email ?
-           <Nav.Link as={HashLink} to="/notfound">Manage all Order</Nav.Link>:<></>}
+           <Nav.Link as={HashLink} to="/notfound">Manage all Order</Nav.Link>:<></>} */}
+           { user?.email ?
+           <Nav.Link as={HashLink} to="/dashboard">Dashboard</Nav.Link>:<></>}
+         
      {user?.email ?
      <Button onClick={logOut} variant="light">Logout</Button>:
       <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
