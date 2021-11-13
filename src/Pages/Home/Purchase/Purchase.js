@@ -10,7 +10,7 @@ const Purchase = () => {
   const onSubmit = data => {
     console.log(data);
 
-    axios.post('http://localhost:4000/users', data)
+    axios.post('https://rocky-anchorage-27627.herokuapp.com/users', data)
     .then(res => {
       if(res.data.insertedId){
         alert('added successfully');

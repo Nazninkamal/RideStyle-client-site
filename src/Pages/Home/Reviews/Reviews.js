@@ -5,7 +5,7 @@ import Reviewss from '../Reviewss/Reviewss';
 const Reviews = () => {
     const [products, setProducts] = useState([]);
     useEffect(() =>{
-        fetch('http://localhost:4000/review')
+        fetch('https://rocky-anchorage-27627.herokuapp.com/review')
         .then(res => res.json())
         .then(data => setProducts(data));
 

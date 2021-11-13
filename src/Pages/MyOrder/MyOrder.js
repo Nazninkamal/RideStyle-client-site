@@ -4,13 +4,13 @@ const MyOrder = () => {
     const [services, setServices] = useState([]);
 
     useEffect(()=>{
-        fetch(`http://localhost:4000/users`)
+        fetch(`https://rocky-anchorage-27627.herokuapp.com/users`)
         .then(res => res.json())
         .then(data => setServices(data))
     }, []);
 
     const handleDelete = id => {
-        const url = `http://localhost:4000/users/${id}`
+        const url = `https://rocky-anchorage-27627.herokuapp.com/users/${id}`
         fetch(url, {
             method: 'DELETE'
         })
