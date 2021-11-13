@@ -23,7 +23,7 @@ const Header = () => {
     <Nav.Link as={HashLink} to="/home#products">Products</Nav.Link>
       {/* <Nav.Link as={HashLink} to="/home#purchase">Purchase</Nav.Link> */}
       <Nav.Link as={HashLink} to="/contact">Contact us</Nav.Link>
-      <Nav.Link as={HashLink} to="/addservice">AddService</Nav.Link>
+      <Nav.Link as={HashLink} to="/addservice">Manage Product</Nav.Link>
      <Navbar.Collapse className="justify-content-end">
       {/* { user?.email ?
            <Nav.Link as={HashLink} to="/myorder">My Order</Nav.Link>:<></>}

@@ -24,9 +24,10 @@ const Review = () => {
            <h1>Review Section</h1> 
            <form onSubmit={handleSubmit(onSubmit)} >
       <input defaultValue={user.displayName} {...register("name", { required: true })}/>
-      <input defaultValue={user. photoURL}  {...register("photoURL", { required: true })}/>
+      <input defaultValue={user. photoURL}  {...register("photoURL", { required: true })}/> 
       <textarea {...register("reviewText")}  placeholder="Your Review"/>
       <input type="number" {...register("reviewNumber")} placeholder="review star"/>
+      <input {...register("date")} placeholder="date"/>
 
       
       <input type="submit" />
